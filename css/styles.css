@@ -1,0 +1,51 @@
+:root {
+    --primary-text-color: #212121;
+    --description-text-color: #757575;
+    --acent-color: #2196F3;
+    --primary-bg-color: #F5F4FA;
+    --footer-bg-color: #2F303A;
+    --white-text-color: #ffffff;
+}
+
+
+body{
+    color: var(--primary-text-color);
+    font-family: Roboto;
+}
+
+/* Contacts */
+
+.contacts .link {
+    color: var(--description-text-color);
+}
+
+.contacts .link-address {
+    color: var(--white-text-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus,
+.contacts .link-address:hover,
+.contacts .link-address:focus {
+    color: var(--acent-color);
+}
+
+
+
+
+/* Button */
+.button {
+    cursor: pointer;
+}
+
+.button.primary {
+    background-color: var(--primary-bg-color);
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+}
