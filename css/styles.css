@@ -13,6 +13,15 @@ body{
     font-family: Roboto;
 }
 
+/* Reset style */
+.link {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
 /* Contacts */
 
 .contacts .link {
@@ -30,8 +39,13 @@ body{
     color: var(--acent-color);
 }
 
-
-
+/* Navigation */
+.nav-list .link{
+    color: var(--primary-text-color);
+}
+.nav-list .link.current {
+    color: var(--acent-color);
+}
 
 /* Button */
 .button {
@@ -42,10 +56,26 @@ body{
     background-color: var(--primary-bg-color);
 }
 
-ul {
-    list-style: none;
-}
-
 footer {
     background-color: var(--footer-bg-color);
 }
+
+/* Section common styles */
+.section .section-title {
+    color: var(--primary-text-color);
+}
+
+/* Description text color */
+.features .description,
+.team .description,
+.portfolio .description {
+    color: var(--description-text-color);
+}
+
+
+/* Portfolio from portfolio file*/
+
+.portfolio .link {
+    color: var(--primary-text-color);
+}
+
