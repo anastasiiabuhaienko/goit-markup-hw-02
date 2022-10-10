@@ -3,15 +3,24 @@
     --description-text-color: #757575;
     --acent-color: #2196F3;
     --primary-bg-color: #F5F4FA;
-    --footer-bg-color: #2F303A;
-    --white-text-color: #ffffff;
+    --acent-bg-color: #2F303A;
+    --white-color: #ffffff;
 }
 
 
 body{
+    background-color: var(--white-color);
     color: var(--primary-text-color);
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
 }
+ /* Logo */
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+} 
 
 /* Reset style */
 .link {
@@ -22,60 +31,107 @@ ul {
     list-style: none;
 }
 
-/* Contacts */
-
-.contacts .link {
-    color: var(--description-text-color);
-}
-
-.contacts .link-address {
-    color: var(--white-text-color);
-}
-
-.contacts .link:hover,
-.contacts .link:focus,
-.contacts .link-address:hover,
-.contacts .link-address:focus {
-    color: var(--acent-color);
-}
-
-/* Navigation */
-.nav-list .link{
-    color: var(--primary-text-color);
-}
-.nav-list .link.current {
-    color: var(--acent-color);
-}
-
-/* Button */
-.button {
-    cursor: pointer;
-}
-
-.button.primary {
-    background-color: var(--primary-bg-color);
-}
-
-footer {
-    background-color: var(--footer-bg-color);
-}
-
 /* Section common styles */
 .section .section-title {
     color: var(--primary-text-color);
 }
 
+
+/* Contacts */
+.contacts .link,
+.contacts-footer .link {
+    color: var(--description-text-color);
+}
+
+.contacts .link {
+    letter-spacing: 0.02em;
+}
+
+.contacts-footer .link-address {
+    color: var(--white-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus,
+.contacts .link-address:hover,
+.contacts .link-address:focus,
+.contacts-footer .link:hover,
+.contacts-footer .link:focus,
+.contacts-footer .link-address:hover,
+.contacts-footer .link-address:focus
+ {
+    color: var(--acent-color);
+}
+
+
+
+/* Navigation */
+.nav-list .link{
+    color: var(--primary-text-color);
+    letter-spacing: 0.02em;
+}
+.nav-list .link.current {
+    color: var(--acent-color);
+}
+
+/* Hero */
+.hero {
+    background-color: var(--acent-bg-color);
+    letter-spacing: 0.06em;
+}
+.hero .hero-title {
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+.hero button {
+    letter-spacing: 0.06em;
+}
+
+
+/* Button */
+.button {
+    cursor: pointer;
+}
+.button.primary {
+    background-color: var(--primary-bg-color);
+    letter-spacing: 0.03em;
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--acent-bg-color);
+}
+
+
+/* Features */
+.features-list .title {
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+}
+
+
+/* Team */
+.team-list .title {
+    color: var(--primary-text-color);
+}
+
+
 /* Description text color */
-.features .description,
-.team .description,
-.portfolio .description {
+.features-list .description,
+.team-list .description,
+.portfolio-list .description {
     color: var(--description-text-color);
 }
 
 
-/* Portfolio from portfolio file*/
-
-.portfolio .link {
+/* Portfolio from portfolio.html*/
+.portfolio-list .link {
     color: var(--primary-text-color);
 }
+.portfolio-list .title {
+    color: var(--primary-text-color);
+    letter-spacing: 0.06em;
+}
+
 
