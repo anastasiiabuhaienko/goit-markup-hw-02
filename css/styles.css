@@ -2,6 +2,7 @@
     --primary-text-color: #212121;
     --description-text-color: #757575;
     --accent-color: #2196F3;
+    --active-color-button: #188CE8;
     --primary-bg-color: #F5F4FA;
     --accent-bg-color: #2F303A;
     --white-color: #ffffff;
@@ -19,13 +20,18 @@ body{
 
  /* Logo */
 .logo {
-    color: var(--black-color);
     font-family: Raleway, sans-serif;
     font-size: 26px;
     line-height: 1.19;
 } 
 .logo .logo-accent {
     color: var(--accent-color);
+}
+.logo .logo-black {
+    color: var(--black-color);
+}
+.logo .logo-white {
+    color: var(--white-color);
 }
 
 
@@ -40,7 +46,6 @@ ul {
 
 /* Section common styles */
 .section .section-title {
-    color: var(--primary-text-color);
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -61,8 +66,6 @@ ul {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-        /* Поставлен цвет под текст адреса чтоб было видно белый цвет текста, потом убрать */
-    background-color: var(--accent-bg-color);
 }
 .contacts-footer .geolocation {
      /* Параметры шрифта унаследовали выше */
@@ -96,11 +99,10 @@ ul {
 
 /* Hero */
 .hero {
+    background-color: var(--accent-bg-color);
     letter-spacing: 0.06em;
 }
 .hero .hero-title {
-    /* Поставлен цвет под заголовок чтоб было видно белый цвет текста, потом убрать */
-    background-color: var(--accent-bg-color);
     color: var(--white-color);
     text-transform: uppercase;
     font-family: 'Roboto';
@@ -114,7 +116,6 @@ ul {
 /* Button */
 /* Настройки для часто встрещающихся кнопок */
 .button {
-    color: var(--primary-text-color);
     background-color: var(--primary-bg-color);
     cursor: pointer;
     font-family: inherit;
@@ -124,31 +125,36 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
 }
-/* Настройка для акцентной кнопки */
-.button.primary {
+
+.hero .button {
     color: var(--white-color);
     background-color: var(--accent-color);
-}
-/* Настройка для не акцентной кнопки */
-.button.secondary {
-    color: var(--primary-text-color);
-    background-color: var(--primary-bg-color);
-}
-.hero .button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
 }
+.hero .button:hover,
+.hero .button:focus {
+    background-color: var(--active-color-button);
+}
+.filter-list .button:hover,
+.filter-list .button:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+
 
 
 /* Footer */
-
+footer {
+    background-color: var(--accent-bg-color);
+}
 
 
 /* Features */
 .features-list .title {
-    color: var(--primary-text-color);
     text-transform: uppercase;
     font-size: 14px;
     line-height: 1.14;
