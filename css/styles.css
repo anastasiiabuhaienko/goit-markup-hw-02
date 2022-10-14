@@ -138,8 +138,8 @@ ul {
 .hero .button:focus {
     background-color: var(--active-color-button);
 }
-.filter-list .button:hover,
-.filter-list .button:focus {
+.filters-list .button:hover,
+.filters-list .button:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
 }
